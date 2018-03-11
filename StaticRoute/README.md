@@ -29,7 +29,7 @@ To follow this exercise, please enter the server and install Ansible:
 [local]
 127.0.0.1
 ```
-5. `export ANSIBLE_LIBRARY=/home/vagrant/notebooks/SDNMeetupYDK/StaticRoute/ansible/`
+5. `export ANSIBLE_LIBRARY=/home/vagrant/local_notebook/SDNMeetupYDK/StaticRoute/ansible/`
 
 The file add_loopback_in_server.yml is an Ansible playbook that uses the module to configure a local loopback and configures the static route in the router. 
 It then tests that the procedure was successful using a ping. Analyze it if possible.
