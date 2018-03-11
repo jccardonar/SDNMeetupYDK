@@ -33,7 +33,7 @@ Access the server using the instructions in the next section. After that, config
 Add the line `nameserver 198.18.133.1`.
 
 Enter the Jupyter folder and Download this repo to the server: 
-* `cd /home/vagrant/notebook`
+* `cd /home/vagrant/local_notebook`
 * `git clone https://github.com/jccardonar/SDNMeetupYDK.git`
 
 ## How to access the Lab elements.
