@@ -6,7 +6,7 @@ This code was designed to be used with the session "A Practical Approach to SP P
 
 For use outside of the meetup, please try to schedule your own session (you must be registered). Alternatively, get access to a virtual XR router, enable netconf on it, and change any connectivity variables in the notebooks.
 
-**Note:** The code in this repository serves as an alternative set of instructions to the ones provided in the session. We recommend that people also try the original notebooks of the sessions.
+**Note:** The code in this repository serves as an alternative set of instructions to the ones provided in the session. We recommend that people also try the original notebooks of the session.
 
 # Instructions
 
