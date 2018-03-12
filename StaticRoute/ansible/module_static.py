@@ -106,16 +106,23 @@ if __name__ == '__main__':
             password=password, 
             protocol=protocol)
     crud = CRUDService()
-    # YOUR CODE GOES HERE (JUST COPY FROM IT FROM THE NOTEBOOK) 
 
+    new_route_static = xr_ip_static_cfg.RouterStatic() # create object static route
 
+    # we are cheating here because we know this is the default 
+    vrf_unicast = new_route_static.default_vrf.address_family.vrfipv4.vrf_unicast
 
+    vrf_prefix = vrf_unicast.vrf_prefixes.VrfPrefix()
+    vrf_prefix.prefix = prefix
+    vrf_prefix.prefix_length = prefix_length
 
-
-
+    vrf_next_hop_next_hop_address = vrf_prefix.vrf_route.vrf_next_hop_table.VrfNextHopNextHopAddress()
+    vrf_next_hop_next_hop_address.next_hop_address = next_hop
+    vrf_prefix.vrf_route.vrf_next_hop_table.vrf_next_hop_next_hop_address.append(vrf_next_hop_next_hop_address)
+    vrf_unicast.vrf_prefixes.vrf_prefix.append(vrf_prefix) 
 
     try:
-        #crud.create(provider, static_route_object)
+        crud.create(provider, new_route_static)
     except Exception as e:
         module.fail_json(msg='static route transaction failed. Error is: {}'.format(e))
 
