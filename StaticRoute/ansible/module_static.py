@@ -110,7 +110,7 @@ if __name__ == '__main__':
 
 
     try:
-        #crud.create(provider, static_route_object)
+        crud.create(provider, static_route_object)
     except Exception as e:
         module.fail_json(msg='static route transaction failed. Error is: {}'.format(e))
 
