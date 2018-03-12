@@ -1,40 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
 <bgp xmlns="http://openconfig.net/yang/bgp">
   <global>
     <afi-safis>
       <afi-safi>
-        <afi-safi-name xmlns:idx="http://openconfig.net/yang/bgp-types">idx:ipv4-unicast</afi-safi-name>
+        <afi-safi-name xmlns:idx="http://openconfig.net/yang/bgp-types">idx:IPV4_UNICAST</afi-safi-name>
         <config>
-          <afi-safi-name xmlns:idx="http://openconfig.net/yang/bgp-types">idx:ipv4-unicast</afi-safi-name>
+          <afi-safi-name xmlns:idx="http://openconfig.net/yang/bgp-types">idx:IPV4_UNICAST</afi-safi-name>
           <enabled>true</enabled>
         </config>
       </afi-safi>
     </afi-safis>
     <config>
       <as>65001</as>
-      <router-id>1.1.1.3</router-id>
     </config>
   </global>
-  <neighbors>
-    <neighbor>
-      <neighbor-address>1.1.1.1</neighbor-address>
-      <afi-safis>
-        <afi-safi>
-          <afi-safi-name xmlns:idx="http://openconfig.net/yang/bgp-types">idx:ipv4-unicast</afi-safi-name>
-          <config>
-            <afi-safi-name xmlns:idx="http://openconfig.net/yang/bgp-types">idx:ipv4-unicast</afi-safi-name>
-            <enabled>true</enabled>
-          </config>
-        </afi-safi>
-      </afi-safis>
-      <config>
-        <neighbor-address>1.1.1.1</neighbor-address>
-        <peer-as>65001</peer-as>
-      </config>
-      <transport>
-        <config>
-          <local-address>Loopback0</local-address>
-        </config>
-      </transport>
-    </neighbor>
-  </neighbors>
 </bgp>
+</config>

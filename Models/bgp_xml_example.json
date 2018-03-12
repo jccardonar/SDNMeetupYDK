@@ -1,0 +1,20 @@
+{
+  "openconfig-bgp:bgp": {
+    "global": {
+      "afi-safis": {
+        "afi-safi": [
+          {
+            "afi-safi-name": "idx:IPV4_UNICAST",
+            "config": {
+              "afi-safi-name": "idx:IPV4_UNICAST",
+              "enabled": true
+            }
+          }
+        ]
+      },
+      "config": {
+        "as": 65001
+      }
+    }
+  }
+}

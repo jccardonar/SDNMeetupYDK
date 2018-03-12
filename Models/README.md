@@ -4,3 +4,10 @@ Please do not use the models here included, but try to visit the official reposi
 
 See the tree of a module using pyang -f tree. For instance:
 `pyang -f tree -p openconfig/ openconfig/openconfig-bgp.yang`
+
+To validate the XML, run
+```
+sudo apt-get install xsltproc
+sudo apt-get install libxml2-utils
+export YANG_MODPATH=$YANG_MODPATH:~/local_notebook/SDNMeetupYDK/Models/openconfig
+```
