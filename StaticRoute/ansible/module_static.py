@@ -106,16 +106,11 @@ if __name__ == '__main__':
             password=password, 
             protocol=protocol)
     crud = CRUDService()
-    # YOUR CODE GOES HERE (JUST COPY FROM IT FROM THE NOTEBOOK) 
-
-
-
-
-
+    # YOUR CODE GOES HERE (JUST COPY FROM IT FROM THE NOTEBOOK)
 
 
     try:
-        #crud.create(provider, static_route_object)
+        crud.create(provider, static_route_object)
     except Exception as e:
         module.fail_json(msg='static route transaction failed. Error is: {}'.format(e))
 

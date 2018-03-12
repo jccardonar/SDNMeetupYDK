@@ -1,6 +1,6 @@
 The objective of this task is to perform the basic configuration of BGP on the XRv router.
 
-Make sure that the there is connectivity between the loopbacks of the server and the router. Run the Introduction and Static Route tasks before this one to make sure that the router can reach the server's loopback. You should also add a static route on the server to make sure it can reach the router's loopback:
+Make sure that there is connectivity between the loopbacks of the server and the router. Run the Introduction and Static Route tasks before this one to make sure that the router can reach the server's loopback. You should also add a static route on the server to make sure it can reach the router's loopback:
 `sudo ip route add 1.1.1.3/32 via 192.168.10.4 dev eth1`
 
 `ping -I 1.1.1.1 1.1.1.3` must be running fine.

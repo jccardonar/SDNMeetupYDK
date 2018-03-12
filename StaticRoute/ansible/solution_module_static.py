@@ -80,12 +80,12 @@ if __name__ == '__main__':
     if module.check_mode: 
         module.exit_json(changed=False)
 
-    address_family_ip = module.params("address_family_ip")
-    address_family_prefix_type = module.params("address_family_prefix_type")
-    prefix = module.params("prefix")
-    prefix_length = module.params("prefix_length")
-    next_hop = module.params("next_hop")
-    vrf  = module.params("vrf")
+    address_family_ip = module.params["address_family_ip"]
+    address_family_prefix_type = module.params["address_family_prefix_type"]
+    prefix = module.params["prefix"]
+    prefix_length = module.params["prefix_length"]
+    next_hop = module.params["next_hop"]
+    vrf  = module.params["vrf"]
 
     if not validate_vrf(vrf):
         module.fail_json(msg='vrf {} is not valid.'.format(vrf))
