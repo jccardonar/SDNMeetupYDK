@@ -25,7 +25,8 @@ Restart the quagga service using:
 `sudo /etc/init.d/quagga restart`
 
 Access the different daemons using (the ports can be found in /etc/services):
-* `telnet 127.0.0.1` 2608 for ISIS
-* `telnet 127.0.0.1` 2604 for OSPF
-* `telnet 127.0.0.1` 2605 for BGP 
+* `telnet 127.0.0.1 2608` for ISIS
+* `telnet 127.0.0.1 2604` for OSPF
+* `telnet 127.0.0.1 2605` for BGP 
+Password is sdn for all daemons (see config files).
 

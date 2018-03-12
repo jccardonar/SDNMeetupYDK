@@ -38,7 +38,7 @@ Enter the Jupyter folder and Download this repo to the server:
 
 ## How to access the Lab elements.
 
-To access the Jupyter hub, enter the address http://198.18.128.101:8888/tree? in a browser.
+To access the Jupyter hub, enter the address http://198.18.128.101:8888/tree in a browser. Enter in the local_notebook folder.
 
 For access to the server:
 * SSH IP 198.18.128.101 Port 2015. Use "vagrant" as u. and p.
