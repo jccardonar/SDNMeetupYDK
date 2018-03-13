@@ -1,19 +1,9 @@
 {
-  "openconfig-bgp:bgp": {
+  "bgp_example:bgp": {
     "global": {
-      "afi-safis": {
-        "afi-safi": [
-          {
-            "afi-safi-name": "idx:IPV4_UNICAST",
-            "config": {
-              "afi-safi-name": "idx:IPV4_UNICAST",
-              "enabled": true
-            }
-          }
-        ]
-      },
       "config": {
-        "as": 65001
+        "as": 65001,
+	"router-id": "1.1.1.1"
       }
     }
   }

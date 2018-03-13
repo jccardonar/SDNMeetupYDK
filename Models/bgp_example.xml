@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
-<bgp xmlns="http://openconfig.net/yang/bgp">
+<bgp xmlns="http://bgp_example">
   <global>
-    <afi-safis>
-      <afi-safi>
-        <afi-safi-name xmlns:idx="http://openconfig.net/yang/bgp-types">idx:IPV4_UNICAST</afi-safi-name>
-        <config>
-          <afi-safi-name xmlns:idx="http://openconfig.net/yang/bgp-types">idx:IPV4_UNICAST</afi-safi-name>
-          <enabled>true</enabled>
-        </config>
-      </afi-safi>
-    </afi-safis>
     <config>
       <as>65001</as>
+      <router-id>1.1.1.1</router-id>
     </config>
   </global>
 </bgp>

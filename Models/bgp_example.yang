@@ -1,0 +1,27 @@
+module bgp_example {
+
+	yang-version "1";
+	namespace "http://bgp_example";
+
+	prefix "sdnmeetupbgp";
+
+	container bgp {
+			description "Top-level configuration and state for the BGP router";
+
+			container global {
+					description "Global configuration for the BGP router";
+					container config {
+							leaf as {
+									type int32;
+							}
+							leaf router-id {
+									description "Id of router. Here it is a simple string, but in the real number it should check that it is a valid IP";
+									type string;
+							}
+
+
+					}
+
+			}
+  }
+}
