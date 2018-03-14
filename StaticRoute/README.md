@@ -38,3 +38,8 @@ To run the playbook use:
 
 `ansible-playbook add_loopback_in_server.yml --extra-vars "address=1.1.1.1"`
 
+## Disclaimer
+Please note that if we run the playbook multiple times with different IPs, each run will add a new static route to the router.
+
+This might not be what we want. A proper solution might need to remove old configured IPs. This could be achived by assigning a name to the static route, or storing the old ip and removing any static routes pointing to it. 
+

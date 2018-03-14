@@ -16,7 +16,7 @@
      failed_when: (" 0% packet loss" not in res.stdout)
      changed_when: no
 
-   - name: Configure 
+   - name: Configure static route in the router.
      module_static:
        prefix: "{{ address }}"
        prefix_length: 32
